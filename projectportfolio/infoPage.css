@@ -34,23 +34,33 @@ body {
 
 .introduction__text {
   display: flex;
-  align-items: center;
+
+  justify-content: center;
   text-align: center;
-  flex-direction: column;
-  max-width: 550px;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.introduction__text h2 {
+#introduction h2 {
   font-size: 45px;
+  margin-bottom: 20px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .introduction__text p {
   font-size: 18px;
   font-weight: 600;
   margin: 10px 15px;
+  max-width: 250px;
 }
 
+.intrduction__pText {
+  display: flex;
+}
 /* Work Section */
 
 #work {
