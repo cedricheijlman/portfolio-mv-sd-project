@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Javanese Text";
+  src: url("javanese-text.woff");
+}
+
 body {
   background-image: url("backgroundimage.PNG");
   background-position: center;
@@ -48,7 +53,7 @@ body {
   font-size: 45px;
   margin-bottom: 20px;
 
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Javanese Text", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .introduction__text p {
@@ -61,6 +66,7 @@ body {
 .intrduction__pText {
   display: flex;
 }
+
 /* Work Section */
 
 #work {
@@ -83,10 +89,11 @@ body {
   font-size: 55px;
   margin: 25px 0;
   word-wrap: break-word;
+
 }
 
 .work__text p {
-  max-width: 500px;
+  max-width: 300px;
   font-weight: 500;
   margin-bottom: 50px;
   font-size: 18px;
@@ -142,6 +149,8 @@ body {
   margin-bottom: 15px;
 }
 
+
+
 .projectItem img {
   max-width: 300px;
   border-radius: 13px;
@@ -156,6 +165,12 @@ body {
 
   flex-direction: column;
   justify-content: center;
+}
+
+.projectItem div p:nth-child(1) {
+  font-family: "Javanese Text";
+  font-size: 250px;
+
 }
 
 .right div {
@@ -179,9 +194,48 @@ body {
   padding: 10px 10px;
   flex-direction: column;
 }
+
 .project p {
   max-width: 800px;
   margin-bottom: 20px;
+}
+
+/* Werkervaring */
+
+#werkervaring {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+  max-height: 70vh;
+  font-size: 18px;
+
+  font-weight: 500;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#werkervaring .werkervaring__text {
+  max-width: 300px;
+  margin: 0 50px;
+  max-height: 500px;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.werkervaring__text p {
+  margin-bottom: 20px;
+}
+
+.werkervaring__text p:nth-child(1) {
+  font-family: "Javanese Text";
+  font-size: 23px;
 }
 
 /* My future Section */
@@ -196,7 +250,7 @@ body {
 }
 
 .myFuture__text {
-  width: 700px;
+  width: 400px;
   text-align: center;
 }
 
@@ -209,6 +263,11 @@ body {
   font-size: 20px;
   font-weight: 500;
   margin: 0 15px;
+  font-family: "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
 /* Contact */
@@ -240,6 +299,13 @@ body {
   padding-left: 50px;
 }
 
+/* overige */
+
 .none {
   display: none;
+}
+
+h2 {
+  font-family: "Javanese Text";
+  font-weight: 100;
 }
