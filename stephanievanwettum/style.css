@@ -19,7 +19,7 @@
   background-position: center;
   background-size: cover;
   display: flex;
-
+  font-family: "Javanese Text";
   align-items: center;
   filter: brightness(1.2);
   flex-direction: column;
@@ -29,7 +29,7 @@
 .homepage__title {
   font-size: 190px;
   line-height: 140px;
-  font-family: "Javanese Text";
+
   font-weight: 200;
   z-index: 99;
   color: #1d2e46;
@@ -107,6 +107,8 @@
 .homepage__down a {
   text-decoration: none;
   color: black;
+
+  max-height: 50px;
 }
 
 .homepage__btn {
@@ -116,13 +118,14 @@
   z-index: 99;
   border-radius: 35px;
   cursor: pointer;
-  padding: 15px 25px;
   width: 250px;
   justify-content: center;
   align-items: center;
   transition: all 0.4s;
   display: flex;
   font-size: 26px;
+  font-family: "Javanese Text";
+
 }
 
 .homepage__btn:hover {
