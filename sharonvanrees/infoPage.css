@@ -3,6 +3,13 @@
   margin: 0;
   color: #1d2e46;
   padding: 0;
+
+}
+
+
+@font-face {
+  font-family: "Javanese Text";
+  src: url("javanese-text.woff");
 }
 
 body {
@@ -27,28 +34,33 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 500%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .introduction__text {
   display: flex;
-  align-items: center;
-  text-align: center;
+  padding: 0 20px;
   flex-direction: column;
   max-width: 550px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
 
 .introduction__text h2 {
   font-size: 45px;
+  font-family: "Javanese Text";
+  margin-bottom: -10px;
+  font-weight: 200;
 }
 
 .introduction__text p {
   font-size: 18px;
   font-weight: 600;
-  margin: 10px 15px;
+  margin: 0px 0;
+  font-family: "Segoe UI";
+  margin-bottom: 12px;
 }
 
 /* Work Section */
@@ -58,48 +70,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 55px;
 }
 
 .work__text {
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
-  text-align: center;
-  width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  width: 80%;
+
 }
 
 .work__text h2 {
   font-size: 55px;
-  margin: 25px 0;
+  margin-bottom: -15px;
   word-wrap: break-word;
+  font-family: "Javanese Text";
+  font-weight: 200;
+  line-height: 60px;
+
 }
 
 .work__text p {
+  font-family: "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
   max-width: 500px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 50px;
   font-size: 18px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.work__text button {
-  padding: 15px 25px;
-  border-radius: 15px;
-  border: none;
-  margin: 10px 30px;
-  background-color: #879dbe0e;
-  border: 1px solid white;
-  transition: all 0.4s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
 
-.work__text button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
 
 /* Work __ Projects Section */
 
@@ -108,7 +114,7 @@ body {
   border: 1px solid rgba(221, 221, 221, 0.212);
   width: 80%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 500px;
+
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -125,73 +131,111 @@ body {
   border-radius: 4px;
 }
 
-.workAndProjects img:nth-last-of-type(1) {
-  max-height: 200px;
-}
+
 
 .workAndProjects__text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 70%;
+  max-width: 80%;
   font-weight: 500;
+  font-size: 18px;
   margin-top: 50px;
 }
 
 .workAndProjects__text p {
   margin-bottom: 10px;
+
+
+
 }
 
 /* My future Section */
 
 #myFuture {
   width: 100%;
-  height: 60vh;
+  text-align: left;
+  margin-top: 150px;
   display: flex;
   align-items: center;
+
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .myFuture__text {
-  width: 700px;
-  text-align: center;
+  margin: 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
 }
 
 .myFuture__text h2 {
+  width: 100%;
   font-size: 45px;
-  margin-bottom: 25px;
+  font-weight: 400;
+  max-width: 670px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-family: "Javanese Text";
 }
 
 .myFuture__text p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  margin: 0 15px;
+  max-width: 670px;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Contact */
 #contact {
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  margin: 0 35px;
+
 }
 
 .contact__text h2 {
   font-size: 45px;
+  text-align: left;
+  font-weight: 200;
+  width: 100%;
+  max-width: 670px;
 }
 
 .contact__text h3 {
   font-size: 22px;
   margin: 3px;
+
 }
 
 .contact__text div {
+  width: 100%;
+  max-width: 670px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  padding-left: 50px;
+
+
+}
+
+/* Overige */
+
+h2 {
+  font-family: "Javanese Text";
 }
