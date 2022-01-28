@@ -47,6 +47,7 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
+  transition: all 1.3s;
   font-family: "Javanese Text";
   align-items: center;
   filter: brightness(1.2);
