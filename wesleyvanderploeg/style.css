@@ -23,22 +23,9 @@ body {
 
 }
 
-.fadeOutAnimation {
-  animation: fadeOutScreen 1s;
-}
 
 .fadeInAnimation {
-  animation: fadeInScreen 1s;
-}
-
-@keyframes fadeOutScreen {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
+  animation: fadeInScreen 3s;
 }
 
 @keyframes fadeInScreen {
