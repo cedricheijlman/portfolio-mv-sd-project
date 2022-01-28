@@ -1,30 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://www.dafontfree.net/embed/amF2YW5lc2UtdGV4dC1yZWd1bGFyJmRhdGEvNDkvai8zODE0NS9qYXZhdGV4dC50dGY"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="homepage">
-      <div class="homepage__upper">
-        <h1 class="homepage__title">
-          Stephanie <br />
-          <span>van Wettum</span>
-        </h1>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephanie Van Wettum</title>
+</head>
+
+<body>
+  <!-- Homepage -->
+  <div class="homepage">
+    <div class="homepage__upper">
+      <h1 class="homepage__title">
+        Stephanie <br />
+        <span>van Wettum</span>
+      </h1>
+    </div>
+    <div class="homepage__down">
+      <button onclick="removeScreen()" class="homepage__btn">
+        <a>Continue</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Introductie -->
+  <section class="fadeIn" id="introduction">
+    <img src="./profilepicture.png" />
+    <h2>Introductie</h2>
+    <div class="introduction__text">
+      <p> Hoi! Ik ben Stephanie en ik ben een student grafische vormgeving
+        aan het ROC MBO College.
+        Ik ben 20 jaar oud en ik
+        woon in Almere.
+        Ik heb twee honden en ik
+        woon met mijn ouders
+        en zusje.
+      </p>
+      <p>Ik heb altijd getekend en
+        dingen gemaakt sinds ik
+        jong was en
+        doe het nog steeds graag.
+        Hopelijk leer ik nog veel
+        meer met mijn studie.</p>
+
+    </div>
+  </section>
+  <!-- Work Upper Text and Buttons -->
+  <section class="fadeIn" id="work">
+    <div class="work__text">
+      <h2>Mijn werk </h2>
+      <p>
+        Ik heb gewerkt aan veel
+        opdrachten en
+        miniprojecten in de
+        de afgelopen 5 maanden of zo.
+        Ik vond het erg leuk om ze te
+        maken en ook genoten van
+        nieuwe vaardigheden te leren.
+        Hopelijk maak ik er
+        meer maken in de toekomst.
+      </p>
+      <div><button class="experiencesBtn">Experience</button><button class="projectsBtn">Projects</button></div>
+    </div>
+    <!--Projects and Work-->
+    <div class="workAndProjects">
+      <div class="projectItem">
+        <div>
+          <img src="projects/project1.png" />
+          <p>
+            Project: <br />
+            Creëer je eigen huisstijl
+          </p>
+          <p>
+            Ervaring: <br />
+            Ik heb leren werken met de programma's AI en PS. Ook heb ik geleerd om een eigen ontwerp te maken voor een
+            huisstijl.
+          </p>
+        </div>
       </div>
-      <div class="homepage__down">
-        <button class="homepage__btn">
-          <a href="infoPage.html">Continue</a>
-        </button>
+      <div class="projectItem right">
+        <div>
+          <img style="border-radius: 40px" src="projects/project2.png" />
+          <p>
+            Project: <br />
+            Maak je eigen logo
+
+          </p>
+          <p>
+            Ervaring: <br />
+            Ik heb leren werken met de programma's AI en ID. Ook leerde ik werken met het op een bepaalde manier
+            vormgeven van de letters en lettertypes.
+          </p>
+        </div>
+      </div>
+      <div class="projectItem">
+        <div>
+          <img src="projects/project3.png" />
+          <p>
+            Project: <br />
+            Maak je eigen logo
+          </p>
+          <p>
+            Ervaring: <br />
+            Ik heb geleerd om met AI te werken en met het op een bepaalde manier vormgeven van woorden. Ook ontdekte ik
+            alle termen voor de verschillende onderdelen van de opbouw van een woord of zin.
+          </p>
+        </div>
+      </div>
+      <div class="projectItem right">
+        <div>
+          <img src="projects/project4.png" />
+          <p>
+            Project: <br />
+            Maak je eigen logo
+          </p>
+          <p>
+            Ervaring: <br />
+            Ik heb leren werken met PS en heb geleerd om een dierencollage te maken van verschillende afbeeldingen. Ook
+            heb ik geleerd om schaduw en bliksem te gebruiken op bepaalde plaatsen.
+          </p>
+        </div>
+      </div>
+      <div class="project none">
+        <p>Momenteel is het enige project
+          waar ik aan werk is
+          deze hier,
+          het project dat inhoudt;
+          het maken van een functionerende
+          website en app.
+          Dit is de eerste keer
+          dat we samenwerken met een
+          andere klas en ook de
+          eerste keer dat we
+          een groot project maken
+          zoals dit. Ik vind het
+          opwindend om dit te doen
+          en ik leer een
+          veel nieuwe dingen over
+          onze teamgenoten ook.
+        </p>
+        <p>
+          Het project waar we aan werken
+          op dit moment is,
+          zoals ik al eerder vertelde,
+          het maken van een functionerende
+          website en app.
+          Het vereist grafisch ontwerpers
+          en software ontwikkelaars om te
+          bouwen. De ontwerpers maken
+          de lay-out en het prototype
+          van de website en de software-
+          ontwikkelaars zetten het op een
+          platform.De app is in
+          handen van de software ontwikkelaars
+          en wij, de ontwerpers,
+          helpen hier en daar
+          met kleurenschema's en dergelijke.
+        </p>
       </div>
     </div>
-  </body>
+  </section>
+  <!-- Werkervaring -->
+  <section class="fadeIn" id="werkervaring">
+    <div class="werkervaring__text">
+      <p>Werkervaing buiten school:</p>
+      <p>- Albert Heijn: Kassamedewerker Parttime; juli 2017 - september 2017</p>
+      <p>- Onderweg Buffet Restaurant:
+        Bediening/serveerster Parttime
+        juni 2019 - maart 2021
+      </p>
+      <p>
+        - Hema:
+        verkoop/kassamedewerkster Parttime
+        maart 2021 - april 2021
+      </p>
+      <p>
+
+        - Vero Moda:
+        verkoop/kassamedewerkster Parttiime
+        april 2021 - december 2021</p>
+    </div>
+    <div class="werkervaring__text">
+      <p>Opleidingen:</p>
+      <p>- VMBO TL Echnaton te Almere:
+        Diploma: juli 2017
+      </p>
+      <p>- Aeres MBO college
+        Dierenverzorging niveau 3:
+        Diploma: juni 2020</p>
+    </div>
+  </section>
+  <!-- My future -->
+  <section class="fadeIn" id="myFuture">
+    <div class="myFuture__text">
+      <h2>Mijn toekomst<h2>
+          <p>Ik hoop dat ik in de toekomst
+            meer projecten zal maken en
+            meer dingen zal maken die ik leuk
+            vind. Ook hoop ik meer te leren
+            dingen die ik later kan gebruiken
+            in mijn toekomstige carrière en
+            banen. Een baan vinden waar
+            ik mijn vaardigheden kan gebruiken
+            kan gebruiken is ook een belangrijke
+            stap in mijn toekomst. Dus ik
+            hoop dat deze studie mijn
+            mijn vaardigheden en ervaring zal
+            verbeteren.</p>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="fadeIn" id="contact">
+    <div class="contact__text">
+      <h2>Contact Informatie</h2>
+      <div>
+        <h3>Email: swettum@roc-dev..com</h3>
+        <h3>Adress: Floridastraat1</h3>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="index.js"></script>
+
 </html>

@@ -1,12 +1,40 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+  color: #1d2e46;
+  padding: 0;
 }
 
 @font-face {
   font-family: "Javanese Text";
   src: url("javanese-text.woff");
+}
+
+body {
+  background-image: url("backgroundimage.PNG");
+  background-position: center;
+  background-size: contain;
+}
+
+/* Animation */
+
+.fadeIn {
+  display: none !important;
+
+}
+
+.fadeInAnimation {
+  animation: fadeInScreen 3s;
+}
+
+@keyframes fadeInScreen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Homepage */
@@ -130,4 +158,319 @@
 
 .homepage__btn:hover {
   transform: scale(1.05);
+}
+
+/* Introduction Section */
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  height: 90vh;
+}
+
+#introduction img {
+  width: 250px;
+  height: 250px;
+  border-radius: 500%;
+  margin-bottom: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.introduction__text {
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#introduction h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+
+  font-family: "Javanese Text", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introduction__text p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 15px;
+  max-width: 250px;
+}
+
+.intrduction__pText {
+  display: flex;
+}
+
+/* Work Section */
+
+#work {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.work__text h2 {
+  font-size: 55px;
+  margin: 25px 0;
+  word-wrap: break-word;
+
+}
+
+.work__text p {
+  max-width: 300px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.work__text div {
+  display: flex;
+}
+
+.work__text button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 45px;
+  padding-top: 9px;
+  border-radius: 45px;
+  border: none;
+  margin: 0 30px;
+
+  font-size: 17px;
+  background-color: #879dbe0e;
+  border: 1px solid white;
+  transition: all 0.4s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "Javanese Text";
+}
+
+@media screen and (max-width: 477px) {
+  .work__text button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.work__text button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Work __ Projects Section */
+
+.workAndProjects {
+  margin-top: 20px;
+  border: 1px solid rgba(221, 221, 221, 0.212);
+  width: 80%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.projectItem {
+  max-height: 700px;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.projectItem p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+
+.projectItem img {
+  max-width: 300px;
+  border-radius: 13px;
+  width: 90%;
+  min-width: 50px;
+}
+
+.projectItem div {
+  display: flex;
+  height: 100%;
+  width: 350px;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectItem div p:nth-child(1) {
+  font-family: "Javanese Text";
+  font-size: 250px;
+
+}
+
+.right div {
+  align-items: flex-end;
+}
+
+.projectItem:nth-child(2n) {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.project {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+
+.project p {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+/* Werkervaring */
+
+#werkervaring {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 500;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#werkervaring .werkervaring__text {
+  max-width: 300px;
+  margin: 0 50px;
+
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.werkervaring__text p {
+  margin-bottom: 20px;
+}
+
+.werkervaring__text p:nth-child(1) {
+  font-family: "Javanese Text";
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* My future Section */
+
+#myFuture {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.myFuture__text {
+  width: 400px;
+  text-align: center;
+}
+
+.myFuture__text h2 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.myFuture__text p {
+
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 15px;
+  font-family: "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact__text h2 {
+  font-size: 45px;
+}
+
+.contact__text h3 {
+  font-size: 22px;
+  margin: 3px;
+}
+
+.contact__text div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+/* overige */
+
+.none {
+  display: none;
+}
+
+h2 {
+  font-family: "Javanese Text";
+  font-weight: 100;
 }
